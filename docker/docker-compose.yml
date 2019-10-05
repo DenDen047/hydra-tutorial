@@ -11,4 +11,4 @@ services:
         source: ../src
         target: /workdir
     working_dir: /workdir
-    command: python my_app.py
+    command: python my_app.py db=postgresql db.timeout=20
