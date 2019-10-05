@@ -1,7 +1,7 @@
 import hydra
 
 
-@hydra.main()
+@hydra.main(config_path='config.yaml')
 def my_app(cfg):
     print(cfg.pretty())
 

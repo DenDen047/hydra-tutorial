@@ -8,7 +8,7 @@ services:
     image: hydora:latest
     volumes:
       - type: bind
-        source: ../src/010_simple_cli_app
+        source: ../src
         target: /workdir
     working_dir: /workdir
-    command: python my_app.py db.driver=mysql db.user=omry db.pass=secret
+    command: python my_app.py
